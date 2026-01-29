@@ -2,9 +2,9 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import swaggerUi from 'swagger-ui-express';
-import { config } from './config.js';
-import askRoute from './routes/askRoute.js';
-import { swaggerDocument } from './swagger.js';
+import { config } from './config.ts';
+import askRoute from './routes/askRoute.ts';
+import { swaggerDocument } from './swagger.ts';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();

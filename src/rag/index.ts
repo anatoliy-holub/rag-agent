@@ -1,3 +1,3 @@
-export { Embedder } from './embedder.js';
-export { VectorStore } from './vectorStore.js';
-export { RAGService, type AskResult } from './ragService.js';
+export { Embedder } from './embedder.ts';
+export { VectorStore } from './vectorStore.ts';
+export { RAGService, type AskResult } from './ragService.ts';

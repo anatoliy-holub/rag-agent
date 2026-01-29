@@ -77,7 +77,7 @@ rag-agent/
 
 ## Run
 
-1. **Ingest** (chunk `text.txt`, embed via LM Studio, store in ChromaDB). This builds the project then runs the ingest script:
+1. **Ingest** (chunk `text.txt`, embed via LM Studio, store in ChromaDB):
 
    ```bash
    npm run ingest
@@ -89,12 +89,7 @@ rag-agent/
    npm run server
    ```
 
-   Or built + run:
-
-   ```bash
-   npm run build
-   npm start
-   ```
+   Or: `npm start` (same as server). Use `npm run build` to type-check only (no `dist/` output).
 
 3. **Use the app**
 
@@ -142,8 +137,8 @@ rag-agent/
 | `npm run ingest` | Chunk, embed, and store `text.txt` |
 | `npm run server` | Start Express server (tsx)        |
 | `npm run dev`    | Start server with watch            |
-| `npm run build`  | Compile TypeScript to `dist/`     |
-| `npm start`      | Run `dist/server.js`               |
+| `npm run build`  | Type-check only (no emit)         |
+| `npm start`      | Start server (tsx)                 |
 
 ## Tech stack
 

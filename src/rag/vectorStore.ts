@@ -1,5 +1,5 @@
 import { ChromaClient, type Collection, IncludeEnum } from 'chromadb';
-import { config } from '../config.js';
+import { config } from '../config.ts';
 
 const { host, port, collectionName } = config.chroma;
 

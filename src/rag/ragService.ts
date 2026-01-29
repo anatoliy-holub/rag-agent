@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { config } from '../config.js';
-import { Embedder } from './embedder.js';
-import { VectorStore } from './vectorStore.js';
+import { config } from '../config.ts';
+import { Embedder } from './embedder.ts';
+import { VectorStore } from './vectorStore.ts';
 
 const BASE = config.lmStudio.baseUrl;
 const CHAT_MODEL = config.lmStudio.chatModel;

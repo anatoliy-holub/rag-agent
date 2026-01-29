@@ -1,5 +1,5 @@
 import axios, { type AxiosInstance } from 'axios';
-import { config } from '../config.js';
+import { config } from '../config.ts';
 
 const BASE = config.lmStudio.baseUrl;
 const MODEL = config.lmStudio.embeddingModel;

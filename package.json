@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "RAG agent with LM Studio and ChromaDB",
   "type": "module",
-  "main": "dist/server.js",
+  "main": "src/server.ts",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js",
+    "build": "tsc --noEmit",
+    "start": "tsx src/server.ts",
     "dev": "tsx watch src/server.ts",
-    "ingest": "npm run build && node dist/ingest.js",
-    "ingest:dev": "tsx src/ingest.ts",
+    "ingest": "tsx src/ingest.ts",
     "server": "tsx src/server.ts"
   },
   "keywords": ["rag", "lmstudio", "chromadb"],

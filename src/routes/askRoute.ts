@@ -1,5 +1,5 @@
 import { Router, type Request, type Response } from 'express';
-import { RAGService } from '../rag/ragService.js';
+import { RAGService } from '../rag/ragService.ts';
 
 const router = Router();
 const rag = new RAGService();
